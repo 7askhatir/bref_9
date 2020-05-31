@@ -1,7 +1,7 @@
 <?php
 $host="127.0.0.1";
-$user="root";
-$password="";
+$user="user1";
+$password="yes";
 $database="shopping";
 $connect = mysqli_connect($host,$user,$password,$database);
 if(mysqli_connect_errno()){
@@ -17,12 +17,12 @@ if(mysqli_connect_errno()){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="view/style/home.css">
+    <link rel="stylesheet" href="codesource/view/style/home.css">
     <link rel="stylesheet" type="text/css" href="css\index.css" />
     <title>Document</title>
 </head>
 <body>
-<?php require 'view/include/navbar.php'; ?> <br><br>
+<?php require 'codesource/view/include/navbar3.php'; ?> <br><br>
 
 <div id="content" class=" p-3 mb-5 bg-white rounded" >
    <?php 
@@ -102,7 +102,7 @@ if(mysqli_connect_errno()){
 </div>
 
 
-<?php require 'view/include/footer.php'; ?>
+<?php require 'codesource/view/include/footer2.php'; ?>
 
 
 

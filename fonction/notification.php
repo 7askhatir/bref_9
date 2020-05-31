@@ -9,13 +9,14 @@ if(mysqli_connect_errno()){
 }
 ?>
 <?php
-$_SESSION['productId']=[];
-if(isset($_POST['ID_PRD'])){
+ $query="select * from produit where Stochage = 0";
+ $result=mysqli_query($connect,$query);
+ if(! $result){
+     die("erreur in query");
+ }
+ $i=0;
+ while($row=mysqli_fetch_assoc($result)) {
+ $i++;
 
-    session_start();
-
-    $_SESSION['productId'][] = $_POST['ID_PRD'];
-
-}
-$list=array_unique($_SESSION['productId']);
-
+ }
+ return $i;

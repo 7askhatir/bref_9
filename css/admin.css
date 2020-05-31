@@ -1,0 +1,14 @@
+.btn{
+    height: auto;
+    width: auto;
+    color:black;
+    background-color: #0992F9;
+    position: relative;
+    left:40%;
+    right: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+}
+.bi-trash-fill{
+    color:#0992F9;
+}

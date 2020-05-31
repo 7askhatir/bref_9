@@ -1,0 +1,99 @@
+.table-bordered {
+    border: 1px solid #ddd;
+}
+.tables{
+    -webkit-tap-highlight-color: transparent;
+-webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+color: rgba(0,0,0,0.87);
+box-sizing: border-box;
+padding: 8px;
+}
+
+tr{
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+color: rgba(0,0,0,0.87);
+border-spacing: 0;
+border-collapse: collapse;
+box-sizing: border-box;
+}
+th{
+    -webkit-tap-highlight-color: transparent;
+-webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+color: rgba(0,0,0,0.87);
+border-spacing: 0;
+border-collapse: collapse;
+box-sizing: border-box;
+text-align: left;
+padding: 8px;
+line-height: 1.42857143;
+vertical-align: bottom;
+border: 1px solid #ddd;
+border-bottom-width: 2px;
+border-top: 0;
+}
+tr{
+    -webkit-tap-highlight-color: transparent;
+-webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+color: rgba(0,0,0,0.87);
+border-spacing: 0;
+border-collapse: collapse;
+box-sizing: border-box;
+background-color: #f9f9f9;
+}
+.label-danger{
+    -webkit-tap-highlight-color: transparent;
+-webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+border-spacing: 0;
+border-collapse: collapse;
+box-sizing: border-box;
+display: inline;
+padding: .2em .6em .3em;
+font-size: 75%;
+font-weight: 700;
+line-height: 1;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+vertical-align: baseline;
+border-radius: .25em;
+background-color: #d9534f;
+}
+.label-success{
+    -webkit-tap-highlight-color: transparent;
+-webkit-font-smoothing: antialiased;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+border-spacing: 0;
+border-collapse: collapse;
+box-sizing: border-box;
+display: inline;
+padding: .2em .6em .3em;
+font-size: 75%;
+font-weight: 700;
+line-height: 1;
+color: #fff;
+text-align: center;
+white-space: nowrap;
+vertical-align: baseline;
+border-radius: .25em;
+background-color: #5cb85c;
+}
+.products{
+    display:flex;
+    justify-content:center;
+    
+}
+.ha h1{
+    text-align: center;
+    color: #0992F9;
+}

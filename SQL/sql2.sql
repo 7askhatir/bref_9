@@ -35,7 +35,13 @@ create table CATEGORIE
    ID_CAT               int  not null,
    DESCR              varchar(250)
 );
-
+create table ADMIN
+(
+   
+   ID_IDMIN               int  not null AUTO_INCREMENT,
+   EMAIL                   VARCHAR(50),
+   PASSWORD_ADMIN          VARCHAR(20)
+);
 /*==============================================================*/
 /* Table : CLIENT                                               */
 /*==============================================================*/
@@ -112,6 +118,7 @@ create table PRODUIT
    IMAGE                longblob,
    Nom_cat               varchar(30),
    PRIX                 float,
+   Stochage             int,
    primary key (ID_PRD)
 );
 
