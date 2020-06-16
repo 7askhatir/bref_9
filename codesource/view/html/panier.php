@@ -56,23 +56,28 @@ $qte = "";
 session_start();
 
 if(isset($_POST["send"])){
-   
+
     if(isset($_SESSION['productId'])){
         $selectedProfucts=array_unique($_SESSION['productId']);
         $_SESSION['productId'] = $selectedProfucts;
+
     }
+
     $db = Database::connect();
     $statement = $db->prepare("Insert into commande (ID) value(?)");
     $statement->execute(array($_SESSION["ID"]));  
     $statement = $db->prepare("Select ID_COMMANDE from commande where ID = ?  ORDER by ID_COMMANDE desc limit 1");
     $statement->execute(array($_SESSION["ID"])); 
-    $item = $statement->fetch();
+    $item = $statement->fetch();   
     for($i=0;$i<count($selectedProfucts);$i++){
     try{
         $qte = $_POST["quantity" . $selectedProfucts[$i]];
         $statement = $db->prepare("Insert into contenir(ID_PRD,ID_COMMANDE,QTE) value(?,?,?)");
         $statement->execute(array($selectedProfucts[$i],$item["ID_COMMANDE"],$qte));
-       
+        $stmt7 = $db->prepare(" UPDATE produit SET stochage = (stochage - $qte) WHERE ID_PRD = $selectedProfucts[$i]  ");
+        $stmt7->execute();
+
+
     }catch(Exception $e){
         die('Erreur : ' . $e->getMessage());
     }
